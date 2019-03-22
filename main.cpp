@@ -40,7 +40,7 @@ int helpAutoMap()
     cout << "#####A#####A###" << endl << endl;
     cout << "Version alpha: do NOT use multiple characters, special character like \", space, smiley... " << endl;
     cout << "If you need them: replace after." << endl;
-    cout << "domsau2@yahoo.fr" << endl;
+    cout << "https://github.com/RedGuff/AutoMap" << endl;
     return 0;
 }
 
