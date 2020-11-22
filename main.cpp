@@ -69,21 +69,21 @@ int main(int argc, char* argv[]) // Arguments: file.txt, Number of columns, each
             string numberOfThatLetterString=""; // The number of "a" to write, for example, but in string.
             string thatArgument=argv[argument]; // "a=1" for exemple.
             string equality="=";
-            // cout << thatArgument.substr(0,(thatArgument.find(equality))) << " = " ;
+            // cout << thatArgument.substr(0,(thatArgument.find(equality))) << " = " ; // Tests ok.
             numberOfThatLetterString=thatArgument.substr(thatArgument.find(equality) + 1);
             int numberOfThatLetter=atoi(numberOfThatLetterString.c_str()); //	int i = atoi(s.c_str()); https://github.com/khaledalam/YouTube_CPP_codes/blob/master/StringToInt.cpp
             // cout << numberOfThatLetter << endl; // Tests ok.
             // cout << numberOfThatLetter<< " " ; // Tests ok.
             for (int i=0; i< numberOfThatLetter; i++ )
             {
-              mot=mot+thatArgument.substr(0,(thatArgument.find(equality)))  ;
+              mot=mot+thatArgument.substr(0,(thatArgument.find(equality)));
             // inputLineChar[argument-3]=thatArgument.substr(0,(thatArgument.find(equality))) ; // It's possible to have special variable, but it's useless for this small number of parameters.
             // inputLineNumber[argument-3]=numberOfThatLetter;
             }
         }
         // cout << mot << endl; // Tests ok.
         string motMixed=mixable(mot);
-        // cout << motMixed;
+        // cout << motMixed; // Tests ok.
         ofstream myfile;
         myfile.open (argv[1]);
         if (!myfile.is_open()) // Error file.
